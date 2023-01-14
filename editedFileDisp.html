@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here's the edited file | WSD LAB 9</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="top-cont">
+    <div class="top">
+        <nav>
+            <div class="top-head text-center">
+                <h1 class="text-light text-uppercase font-weight-bold">NodeJS with JSON</h1>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="main-cont">
+    <div class="cont d-flex justify-content-center flex-column">
+        <h2 class="text-light text-uppercase font-weight-bold">Edited Data</h2>
+        <span class="text-info">File Name: <%= fileName %>.json</span>
+        <span class="text-light"><%= fileData %></span>
+    </div>
+</div>
+<div class="container mt-4 text-center">
+    <div class="btns d-flex justify-content-around align-items-center">
+        <h2 class="text-light">More Options</h2>
+        <div class="btnField d-flex flex-column justify-content-center align-items-center">
+            <a href="/read" class="btn btn-outline-light" title="Read" id="read"><i class="fa-sharp fa-solid fa-book"></i></a>
+            <label for="read" class="mt-2 text-light text-uppercase font-weight-bold">Read</label>
+        </div>
+        <div class="btnField d-flex flex-column justify-content-center align-items-center">
+            <a href="/edit" class="btn btn-outline-light" title="Edit" id="edit"><i class="fa-solid fa-pen-to-square"></i></a>
+            <label for="edit" class="mt-2 text-light text-uppercase font-weight-bold">Edit</label>
+        </div>
+    </div>
+</div>
+</body>
+</html>
